@@ -47,7 +47,8 @@ export default function VideoDetail() {
       <div className="lg:h-[90vh] dark:bg-black bg-white">
         <div className='lg:w-[900px] md:w-650px] sm:w-[450px] w-[280px] lg:h-[500px] md:h-[400px] sm:h-[350px]'>
           <ReactPlayer
-            controls
+            controls={true}
+            playing={true}
             width="100%"
             height="100%"
             url={`https://www.youtube.com/watch?v=${videoId}`}
